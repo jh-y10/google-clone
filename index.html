@@ -9,17 +9,19 @@
       src="https://kit.fontawesome.com/2f76a8c1f2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <div class="navbar">
       <span>
-        <a class="nav-item" href="#">Google 정보</a>
-        <a class="nav-item" href="#">스토어</a>
+        <a class="nav-item" href="https://about.google">Google 정보</a>
+        <a class="nav-item" href="https://store.google.com/kr">스토어</a>
       </span>
       <span>
-        <a class="nav-item" href="#">Gmail</a>
-        <a class="nav-item" href="#">이미지</a>
-        <i class="fa-solid fa-flask nav-item"></i>
+        <a class="nav-item" href="https://mail.google.com">Gmail</a>
+        <a class="nav-item" href="https://www.google.co.kr/imghp">이미지</a>
+        <i class="fa-solid fa-flask nav-item" onclick="location.href='https://labs.google.com/search'"></i>
+        <i class="fa-solid fa-circle-half-stroke nav-item" onclick="darkMode()"></i>
         <i class="fa-solid fa-bars nav-item"></i>
       </span>
     </div>
@@ -39,20 +41,20 @@
       </div>
       <div class="button-area">
         <button class="button-style">Google 검색</button>
-        <button class="button-style">I'm Feeling Lucky</button>
+        <button class="button-style" onclick="location.href='https://doodles.google/'">I'm Feeling Lucky</button>
       </div>
     </div>
     <div class="footer">
       <div class="first-line">대한민국</div>
       <div class="second-line">
         <span>
-          <a class="nav-item" href="#">광고</a>
-          <a class="nav-item" href="#">비즈니스</a>
-          <a class="nav-item" href="#">검색의 원리</a>
+          <a class="nav-item" href="https://ads.google.com/intl/ko_kr/home/">광고</a>
+          <a class="nav-item" href="https://www.google.com/intl/ko_kr/business/">비즈니스</a>
+          <a class="nav-item" href="https://www.google.com/search/howsearchworks/">검색의 원리</a>
         </span>
         <span>
-          <a class="nav-item" href="#">개인정보처리방침</a>
-          <a class="nav-item" href="#">약관</a>
+          <a class="nav-item" href="https://policies.google.com/privacy">개인정보처리방침</a>
+          <a class="nav-item" href="https://policies.google.com/terms">약관</a>
           <a class="nav-item" href="#">설정</a>
         </span>
       </div>

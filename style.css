@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 .navbar {
   display: flex;
@@ -20,12 +21,18 @@ i.nav-item {
   height: 40px;
   text-align: center;
   line-height: 40px;
-  background: rgb(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
   border-radius: 30px;
 }
 i.nav-item:hover {
-  background: rgb(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+}
+.nav-second-bar {
+  float: right;
+}
+.nav-second-bar>i {
+  margin-right: 34.5px;
 }
 
 .main {
@@ -50,6 +57,10 @@ i.nav-item:hover {
   padding-left: 60px;
   padding-right: 130px;
   font-size: 16px;
+}
+.input-box:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+  border-color: transparent;
 }
 .input-box:focus {
   outline: none;
@@ -100,7 +111,6 @@ i.nav-item:hover {
 }
 .button-style:hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  background-color: #f8f9fa;
   border: 1px solid #dadce0;
 }
 
@@ -122,4 +132,49 @@ i.nav-item:hover {
   padding: 15px 30px;
   font-size: 15px;
   color: #1f1f1f;
+}
+
+body.dark-mode {
+  background-color: #202124;
+}
+body.dark-mode .nav-item {
+  color: #fff;
+}
+body.dark-mode i.nav-item:hover {
+  background: rgb(191, 191, 191, 0.1);
+}
+body.dark-mode .input-box {
+  background-color: #4d5156;
+  border: 1px solid #4d5156;
+  box-shadow: none;
+  color: #fff;
+  caret-color: #fff;
+}
+body.dark-mode .input-box:hover {
+  background-color: #5f6368;
+}
+body.dark-mode .keyboard-icon:hover {
+  color: #fff;
+}
+body.dark-mode .mic-icon:hover {
+  color: #fff;
+}
+body.dark-mode .camera-icon:hover {
+  color: #fff;
+}
+body.dark-mode .button-style {
+  background-color: #303134;
+  border: 1px solid #303134;
+  color: #e8eaed;
+}
+body.dark-mode .button-style:hover {
+  box-shadow: 0 1px 3px rgba(23, 23, 23, 0.24);
+  border: 1px solid #5f6368;
+}
+body.dark-mode .footer {
+  background-color: #171717;
+}
+body.dark-mode .first-line {
+  color: #fff;
+  border-bottom: 1px solid #313335;
 }
